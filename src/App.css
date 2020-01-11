@@ -2,6 +2,10 @@
     margin-top: 15px;
 }
 
+.App .navbar {
+    border:hidden;
+}
+
 .App .navbar-brand {
     font-weight: bold;
 }

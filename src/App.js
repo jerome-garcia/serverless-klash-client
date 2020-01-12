@@ -46,18 +46,6 @@ function App(props) {
               <Link to="/">Logo</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
-            <Navbar.Brand>
-              <Link to="/x">Help</Link>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-            <Navbar.Brand>
-              <Link to="/x">About</Link>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-            <Navbar.Brand>
-              <Link to="/">Leaderboards</Link>
-            </Navbar.Brand>
-            <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>

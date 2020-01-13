@@ -9,3 +9,9 @@
 .App .navbar-brand {
     font-weight: bold;
 }
+
+.App .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+

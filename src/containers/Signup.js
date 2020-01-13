@@ -104,61 +104,89 @@ async function handleConfirmationSubmit(event) {
 
   function renderForm() {
     return (
-      <form onSubmit={handleSubmit}>
-        <FormGroup controlId="firstName" bsSize="small">
-          <ControlLabel>First Name</ControlLabel>
-          <FormControl
-            autoFocus
-            type="name"
-            value={fields.firstName}
-            onChange={handleFieldChange}
-          />
-        </FormGroup>
-        <FormGroup controlId="lastName" bsSize="small">
-          <ControlLabel>Last Name</ControlLabel>
-          <FormControl
-            autoFocus
-            type="name"
-            value={fields.lastName}
-            onChange={handleFieldChange}
-          />
-        </FormGroup>
-        <FormGroup controlId="email" bsSize="small">
-          <ControlLabel>Email</ControlLabel>
-          <FormControl
-            autoFocus
-            type="email"
-            value={fields.email}
-            onChange={handleFieldChange}
-          />
-        </FormGroup>
-        <FormGroup controlId="password" bsSize="small">
-          <ControlLabel>Password</ControlLabel>
-          <FormControl
-            type="password"
-            value={fields.password}
-            onChange={handleFieldChange}
-          />
-        </FormGroup>
-        <FormGroup controlId="confirmPassword" bsSize="small">
-          <ControlLabel>Confirm Password</ControlLabel>
-          <FormControl
-            type="password"
-            onChange={handleFieldChange}
-            value={fields.confirmPassword}
-          />
-        </FormGroup>
-        <p class="text-center">By clicking sign up, you agree to Meta's <strong>User Agreement</strong>.</p>
-        <LoaderButton
-          block
-          type="submit"
-          bsSize="small"
-          isLoading={isLoading}
-          disabled={!validateForm()}
-        >
-          Signup
-        </LoaderButton>
-      </form>
+      <div class="container">
+          <form onSubmit={handleSubmit}>
+            <div class="row">
+              <div class="col-md-6">
+                <FormGroup controlId="firstName" bsSize="large">
+                  <ControlLabel>First Name</ControlLabel>
+                  <FormControl
+                    autoFocus
+                    type="name"
+                    value={fields.firstName}
+                    onChange={handleFieldChange}
+                  />
+                </FormGroup>
+              </div>
+              <div class="col-md-6">
+                <FormGroup controlId="lastName" bsSize="large">
+                  <ControlLabel>Last Name</ControlLabel>
+                  <FormControl
+                    autoFocus
+                    type="name"
+                    value={fields.lastName}
+                    onChange={handleFieldChange}
+                  />
+                </FormGroup>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <FormGroup controlId="email" bsSize="large">
+                    <ControlLabel>Email</ControlLabel>
+                    <FormControl
+                      autoFocus
+                      type="email"
+                      value={fields.email}
+                      onChange={handleFieldChange}
+                    />
+                </FormGroup>
+              </div>
+            </div>
+            <div class="row">
+              <div class ="col-md-12">
+                <FormGroup controlId="password" bsSize="large">
+                  <ControlLabel>Password</ControlLabel>
+                  <FormControl
+                    type="password"
+                    value={fields.password}
+                    onChange={handleFieldChange}
+                  />
+                </FormGroup>
+              </div>
+            </div>
+            <div class="row">
+              <div class ="col-md-12">
+                <FormGroup controlId="confirmPassword" bsSize="large">
+                  <ControlLabel>Confirm Password</ControlLabel>
+                  <FormControl
+                    type="password"
+                    onChange={handleFieldChange}
+                    value={fields.confirmPassword}
+                  />
+                </FormGroup>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="text-center">By clicking sign up, you agree to Meta's <strong>User Agreement</strong>.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <LoaderButton
+                  block
+                  type="submit"
+                  bsSize="large"
+                  isLoading={isLoading}
+                  disabled={!validateForm()}
+                >
+                  Signup
+                </LoaderButton>
+              </div>
+            </div>
+          </form>
+      </div>
     );
   }
 

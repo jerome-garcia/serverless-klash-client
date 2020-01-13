@@ -3,9 +3,11 @@ import "./Leaderboards.css";
 
 export default function Leaderboards() {
   return (
-    <div className="Leaderboards">
-      <div className="lander">
-        <h3>Leaderboards</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Leaderboards Lorem Ipsum</p>
+        </div>
       </div>
     </div>
   );

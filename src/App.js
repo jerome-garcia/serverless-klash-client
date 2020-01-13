@@ -5,6 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import "./App.css";
 import Routes from "./Routes";
 import { Auth } from "aws-amplify";
+import MetaTags from 'react-meta-tags';
 
 
 function App(props) {
@@ -40,12 +41,18 @@ function App(props) {
     return (
       !isAuthenticating &&
       <div className="App container">
+        <MetaTags>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </MetaTags>
         <Navbar fluid collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
               <Link to="/">
                 <img class="img-fluid" src="logo.jpg"/>
               </Link>
+            </Navbar.Brand>
+            <Navbar.Brand>
+              <Link to="/help">Help</Link>
             </Navbar.Brand>
             <Navbar.Brand>
               <Link to="/about">About</Link>

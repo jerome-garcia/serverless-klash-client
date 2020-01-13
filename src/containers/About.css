@@ -1,5 +1,11 @@
-.col {
+.About .col {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: justify;
+}
+
+.About .img-fluid {
+    max-width: 100%;
+    height: auto;
 }

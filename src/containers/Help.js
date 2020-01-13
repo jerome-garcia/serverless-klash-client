@@ -37,8 +37,9 @@ export default function Help(props) {
         <div class="container">
           <div class="row">
             <div class="col">
-              <PageHeader>How can we help?</PageHeader>
+              <h1>How can we help?</h1>
             </div>
+            <br/>
           </div>
           <div class="row">
             <div class="col-md-12">

@@ -9,6 +9,7 @@ import LoaderButton from "../components/LoaderButton";
 import { useFormFields } from "../libs/hooksLib";
 import "./Signup.css";
 import { Auth } from "aws-amplify";
+import MetaTags from 'react-meta-tags';
 
 export default function Signup(props) {
   const [fields, handleFieldChange] = useFormFields({
@@ -105,6 +106,9 @@ async function handleConfirmationSubmit(event) {
   function renderForm() {
     return (
       <div class="container">
+          <MetaTags>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          </MetaTags>
           <form onSubmit={handleSubmit}>
             <div class="row">
               <div class="col-md-6">
@@ -185,6 +189,8 @@ async function handleConfirmationSubmit(event) {
                 </LoaderButton>
               </div>
             </div>
+            <br/>
+            <br/>
           </form>
       </div>
     );

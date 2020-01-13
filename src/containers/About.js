@@ -1,17 +1,21 @@
 import React from "react";
 import "./About.css";
 import { PageHeader } from "react-bootstrap";
+import MetaTags from 'react-meta-tags';
 
 export default function About() {
   return (
     <div className="About">
+        <MetaTags>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </MetaTags>
         <div class="container">
-          <row>
+          <head>
             <div class="col">
-              <PageHeader>About</PageHeader>
+              <title>About</title>
             </div>
-          </row>
-          <row>
+          </head>
+          <body>
             <div class="col-md-6">
               <h2>Meta - A sports matchmaking platform</h2>
               <h4></h4>
@@ -28,7 +32,7 @@ export default function About() {
               <br/>
               <img class="img-fluid" src="about.jpg"/>
             </div> 
-          </row>
+          </body>
         </div>
     </div>
   );

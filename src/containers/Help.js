@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { FormGroup, FormControl, ControlLabel, PageHeader } from "react-bootstrap";
+import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import config from "../config";
 import "./Help.css";
@@ -34,15 +34,15 @@ export default function Help(props) {
   return (
     <div className="Help">
       <form onSubmit={handleSubmit}>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1>How can we help?</h1>
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <h1>Send us a message!</h1>
             </div>
             <br/>
           </div>
-          <div class="row">
-            <div class="col-md-12">
+          <div className="row">
+            <div className="col-md-12">
                 <FormGroup controlId="content">
                   <FormControl
                     value={content}

@@ -105,13 +105,13 @@ async function handleConfirmationSubmit(event) {
 
   function renderForm() {
     return (
-      <div class="container">
+      <div className="container">
           <MetaTags>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           </MetaTags>
           <form onSubmit={handleSubmit}>
-            <div class="row">
-              <div class="col-md-6">
+            <div className="row">
+              <div className="col-md-6">
                 <FormGroup controlId="firstName" bsSize="large">
                   <ControlLabel>First Name</ControlLabel>
                   <FormControl
@@ -122,7 +122,7 @@ async function handleConfirmationSubmit(event) {
                   />
                 </FormGroup>
               </div>
-              <div class="col-md-6">
+              <div className="col-md-6">
                 <FormGroup controlId="lastName" bsSize="large">
                   <ControlLabel>Last Name</ControlLabel>
                   <FormControl
@@ -134,8 +134,8 @@ async function handleConfirmationSubmit(event) {
                 </FormGroup>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
+            <div className="row">
+              <div className="col-md-12">
                 <FormGroup controlId="email" bsSize="large">
                     <ControlLabel>Email</ControlLabel>
                     <FormControl
@@ -147,8 +147,8 @@ async function handleConfirmationSubmit(event) {
                 </FormGroup>
               </div>
             </div>
-            <div class="row">
-              <div class ="col-md-12">
+            <div className="row">
+              <div className ="col-md-12">
                 <FormGroup controlId="password" bsSize="large">
                   <ControlLabel>Password</ControlLabel>
                   <FormControl
@@ -159,8 +159,8 @@ async function handleConfirmationSubmit(event) {
                 </FormGroup>
               </div>
             </div>
-            <div class="row">
-              <div class ="col-md-12">
+            <div className="row">
+              <div className ="col-md-12">
                 <FormGroup controlId="confirmPassword" bsSize="large">
                   <ControlLabel>Confirm Password</ControlLabel>
                   <FormControl
@@ -171,13 +171,13 @@ async function handleConfirmationSubmit(event) {
                 </FormGroup>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p class="text-center">By clicking sign up, you agree to Meta's <strong>User Agreement</strong>.</p>
+            <div className="row">
+              <div className="col-md-12">
+                <p className="text-center">By clicking sign up, you agree to Meta's <strong>User Agreement</strong>.</p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
+            <div className="row">
+              <div className="col-md-12">
                 <LoaderButton
                   block
                   type="submit"
@@ -197,7 +197,7 @@ async function handleConfirmationSubmit(event) {
   }
 
   return (
-    <div className="Signup">
+    <div classNameName="Signup">
       {newUser === null ? renderForm() : renderConfirmationForm()}
     </div>
   );

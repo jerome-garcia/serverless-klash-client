@@ -23,7 +23,7 @@ Amplify.configure({
   API: {
     endpoints: [
       {
-        name: "meta",
+        name: "leaderboards",
         endpoint: config.apiGateway.URL,
         region: config.apiGateway.REGION
       },

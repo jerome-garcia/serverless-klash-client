@@ -48,21 +48,21 @@ function App(props) {
           <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">
-              <img class="img-fluid" src="logo.jpg"/>
+              <img src="logo.jpg" alt="Logo"/>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
           <Nav>
-            <LinkContainer to="/help">
-              <NavItem>Help</NavItem>
+            <LinkContainer className="navigation" to="/leaderboards">
+              <NavItem>Boards</NavItem>
             </LinkContainer>
-            <LinkContainer to="/about">
+            <LinkContainer className="navigation" to="/about">
               <NavItem>About</NavItem>
             </LinkContainer>
-            <LinkContainer to="/leaderboards">
-              <NavItem>Boards</NavItem>
+            <LinkContainer className="navigation" to="/help">
+              <NavItem>Contact Us</NavItem>
             </LinkContainer>
           </Nav>
           <Nav pullRight>

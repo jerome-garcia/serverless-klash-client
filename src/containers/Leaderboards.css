@@ -1,8 +1,39 @@
-.Leaderboards .lander {
-    padding: 80px 0;
-    text-align: left;
+.Leaderboards .col {
+    align-items: center;
 }
 
 .Leaderboards .lander p {
     color: #999;
+}
+
+.Leaderboards .container {
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+
+.Leaderboards .leaderboards {
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 100%;
+}
+
+.Leaderboards .leaderboards td, .leaderboards th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.Leaderboards .leaderboards tr:nth-child(even){background-color: #f2f2f2;}
+
+.Leaderboards .leaderboards tr:hover {
+    background-color: #ddd;
+}
+
+.Leaderboards .leaderboards th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:darkgray;
+  font-weight: bold;
 }

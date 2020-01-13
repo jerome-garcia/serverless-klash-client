@@ -10,8 +10,7 @@
     font-weight: bold;
 }
 
-.App .img-fluid {
-    max-width: 100%;
-    height: auto;
+.App .navigation {
+    font-weight: bold;
 }
 

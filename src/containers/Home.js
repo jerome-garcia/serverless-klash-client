@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { PageHeader } from "react-bootstrap";
+import React from "react";
 import "./Home.css";
 import MetaTags from 'react-meta-tags';
 
 export default function Home(props) {
-  const [isLoading, setIsLoading] = useState(true);
 
   function renderLander() {
       return (
@@ -23,7 +21,7 @@ export default function Home(props) {
                 </div>
               </div>
               <div class="col-md-8">
-                <img class="img-fluid" src="/home.jpg"/>
+                <img class="img-fluid" src="/home.jpg" alt="Landing-Page"/>
               </div>
             </div>
           </div>
@@ -37,20 +35,20 @@ export default function Home(props) {
         <MetaTags>
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </MetaTags>
-        <div class="container">
-            <div class="row">
-              <div class="col">
+        <div className="container">
+            <div className="row">
+              <div className="col">
                 <h1>Meta League</h1> 
               </div>
               <br/>
-              <div class="col">
-                <img class="img-fluid" src="/home.jpg"/>
+              <div className="col">
+                <img className="img-fluid" src="/home.jpg" alt="Landing-Page"/>
               </div>
-              <div class="col">
+              <div className="col">
                 <h3>Find a match, and climb the boards!</h3>
               </div>
-              <div class="col">
-                <button type="button" class="btn btn-secondary">Find Match</button>
+              <div className="col">
+                <button type="button" className="btn btn-secondary">Find Match</button>
               </div>
               <br/>
               <br/>

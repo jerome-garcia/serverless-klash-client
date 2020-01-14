@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import config from "../config";
-import "./Help.css";
+import "./ContactUs.css";
 
 export default function Help(props) {
   const file = useRef(null);
@@ -63,7 +63,7 @@ export default function Help(props) {
                   isLoading={isLoading}
                   disabled={!validateForm()}
                 >
-                  Submit
+                  Send
                 </LoaderButton>
             </div>
           </div>

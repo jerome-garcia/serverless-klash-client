@@ -61,7 +61,7 @@ function App(props) {
             <LinkContainer className="navigation" to="/about">
               <NavItem>About</NavItem>
             </LinkContainer>
-            <LinkContainer className="navigation" to="/help">
+            <LinkContainer className="navigation" to="/contactus">
               <NavItem>Contact Us</NavItem>
             </LinkContainer>
           </Nav>

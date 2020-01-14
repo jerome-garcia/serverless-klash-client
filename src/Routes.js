@@ -4,7 +4,7 @@ import Home from "./containers/Home";
 import Login from "./containers/Login";
 import Signup from "./containers/Signup";
 import About from "./containers/About";
-import Help from "./containers/Help"
+import ContactUs from "./containers/ContactUs"
 import Leaderboards from "./containers/Leaderboards"
 import RedirectLogin from "./containers/RedirectLogin"
 import AppliedRoute from "./components/AppliedRoute";
@@ -17,7 +17,7 @@ export default function Routes({ appProps }) {
     <Switch>
       <AppliedRoute path="/" exact component={Home} appProps={appProps} />
       <AppliedRoute path="/about" exact component={About} appProps={appProps} />
-      <AppliedRoute path="/help" exact component={Help} appProps={appProps} />
+      <AppliedRoute path="/contactus" exact component={ContactUs} appProps={appProps} />
       <UnauthenticatedRoute path="/login" exact component={Login} appProps={appProps} />
       <UnauthenticatedRoute path="/signup" exact component={Signup} appProps={appProps} />
       <AuthenticatedRoute path="/leaderboards" exact component={Leaderboards} appProps={appProps} />

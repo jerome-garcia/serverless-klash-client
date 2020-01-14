@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { PageHeader, ListGroup } from "react-bootstrap";
 import "./Leaderboards.css";
 import { API } from "aws-amplify";
 
@@ -31,11 +30,11 @@ export default function Leaderboards(props) {
   }
 
   function renderLeaderBoardsList(leaderboards) {
-    return leaderboards.sort(function(a, b) { return a.ranking - b.ranking }).map((user, i) =>
+    return leaderboards.map((user, i) =>
       (
       <tr key={user.userId}>
         {
-          <td>{user.ranking}</td>
+          <td>{i+1}</td>
         }
         {
           <td>{user.name}</td>

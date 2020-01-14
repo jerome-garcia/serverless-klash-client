@@ -10,6 +10,7 @@ import { useFormFields } from "../libs/hooksLib";
 import "./Signup.css";
 import { Auth } from "aws-amplify";
 import MetaTags from 'react-meta-tags';
+import { API } from "aws-amplify";
 
 export default function Signup(props) {
   const [fields, handleFieldChange] = useFormFields({
@@ -52,8 +53,8 @@ async function handleSubmit(event) {
 	  }
 
     });
-    setIsLoading(false);
     setNewUser(newUser);
+    setIsLoading(false);
   } catch (e) {
     alert(e.message);
     setIsLoading(false);
@@ -70,12 +71,25 @@ async function handleConfirmationSubmit(event) {
     await Auth.signIn(fields.email, fields.password);
 
     props.userHasAuthenticated(true);
+
+    await addUser({
+      name: fields.firstName,
+      hashGSI: "USER",
+      points: 0
+    });
+
     props.history.push("/");
   } catch (e) {
     alert(e.message);
     setIsLoading(false);
   }
 }
+
+ function addUser(user) {
+   return API.post("leaderboards", "/leaderboards", {
+     body: user
+   });
+ }
 
   function renderConfirmationForm() {
     return (
@@ -197,7 +211,7 @@ async function handleConfirmationSubmit(event) {
   }
 
   return (
-    <div classNameName="Signup">
+    <div className="Signup">
       {newUser === null ? renderForm() : renderConfirmationForm()}
     </div>
   );

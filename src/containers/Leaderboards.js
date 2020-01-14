@@ -31,7 +31,7 @@ export default function Leaderboards(props) {
   }
 
   function renderLeaderBoardsList(leaderboards) {
-    return leaderboards.map((user, i) =>
+    return leaderboards.sort(function(a, b) { return a.ranking - b.ranking }).map((user, i) =>
       (
       <tr key={user.userId}>
         {

@@ -7,4 +7,9 @@
         margin: 0 auto;
         max-width: 320px;
     }
+
+    .RedirectLogin .col {
+        align-items: center;
+        text-align:center;
+    }
 }

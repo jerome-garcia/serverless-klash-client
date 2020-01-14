@@ -73,7 +73,7 @@ async function handleConfirmationSubmit(event) {
     props.userHasAuthenticated(true);
 
     await addUser({
-      name: fields.firstName,
+      name: fields.firstName + " " + fields.lastName,
       hashGSI: "USER",
       points: 0
     });

@@ -8,6 +8,7 @@ export default function Leaderboards(props) {
 
   useEffect(() => {
     async function onLoad() {
+      setIsLoading(true);
       if (!props.isAuthenticated) {
         return;
       }
@@ -19,7 +20,7 @@ export default function Leaderboards(props) {
         alert(e);
       }
 
-    setIsLoading(false);
+      setIsLoading(false);
     }
 
     onLoad();
@@ -48,11 +49,35 @@ export default function Leaderboards(props) {
   }
 
   function renderLeaderBoards() {
-    return <tbody>{!isLoading && renderLeaderBoardsList(leaderboards)}</tbody>
-;
+    return <tbody>{!isLoading && renderLeaderBoardsList(leaderboards)}</tbody>;
   }
 
-  return (
+  return ( !isLoading ? (
+        <div className="Leaderboards">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <h1>Leaderboards</h1>
+              </div>
+            </div>
+            <br/>
+            <div className="row">
+              <div className="col">
+                <table className="leaderboards">
+                  <thead>
+                  <tr>
+                    <th>Ranking</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                  </tr>
+                </thead>
+                { renderLeaderBoards() }
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    ) : (
     <div className="Leaderboards">
       <div className="container">
         <div className="row">
@@ -63,19 +88,11 @@ export default function Leaderboards(props) {
         <br/>
         <div className="row">
           <div className="col">
-            <table className="leaderboards">
-              <thead>
-              <tr>
-                <th>Ranking</th>
-                <th>Name</th>
-                <th>Points</th>
-              </tr>
-            </thead>
-            { renderLeaderBoards() }
-            </table>
+            <h2>Loading...</h2>
           </div>
         </div>
       </div>
     </div>
+	)
   );
 }

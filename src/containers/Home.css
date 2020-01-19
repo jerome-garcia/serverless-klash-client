@@ -13,7 +13,8 @@
     height: auto;
 }
 
-.Home .button-secondary btn{
-    padding: 10px;
-    border-radius: 10px;
+.Home h4 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: small;
 }

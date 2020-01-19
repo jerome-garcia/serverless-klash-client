@@ -187,7 +187,7 @@ async function handleConfirmationSubmit(event) {
             </div>
             <div className="row">
               <div className="col-md-12">
-                <p className="text-center">By clicking sign up, you agree to Meta's <strong>User Agreement</strong>.</p>
+                <p className="text-center">By clicking sign up, you agree to Meta's <a href=""><strong>User Agreement</strong></a>.</p>
               </div>
             </div>
             <div className="row">

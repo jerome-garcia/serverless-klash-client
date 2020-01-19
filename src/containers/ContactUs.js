@@ -17,18 +17,28 @@ export default function Help(props) {
     file.current = event.target.files[0];
   }
 
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
   async function handleSubmit(event) {
     event.preventDefault();
-
-    if (file.current && file.current.size > config.MAX_ATTACHMENT_SIZE) {
-      alert(
-        `Please pick a file smaller than ${config.MAX_ATTACHMENT_SIZE /
-          1000000} MB.`
-      );
-      return;
-    }
-
     setIsLoading(true);
+    try{
+      if (file.current && file.current.size > config.MAX_ATTACHMENT_SIZE) {
+        alert(
+          `Please pick a file smaller than ${config.MAX_ATTACHMENT_SIZE /
+            1000000} MB.`
+        );
+        
+        return;
+      }
+      await sleep(1000);
+      setIsLoading(false);
+	} catch (e) {
+      alert(e.message);
+      setIsLoading(false);
+    }
   }
 
   return (

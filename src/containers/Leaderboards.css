@@ -2,6 +2,10 @@
     align-items: center;
 }
 
+.Leaderboards .col h1{
+    text-align: center;
+}
+
 .Leaderboards .lander p {
     color: #999;
 }

@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
+import "./App.css";
 import { Nav, Navbar, NavItem } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import "./App.css";
 import Routes from "./Routes";
 import { Auth } from "aws-amplify";
 import MetaTags from 'react-meta-tags';
+
 
 
 function App(props) {
@@ -56,7 +57,7 @@ function App(props) {
           <Navbar.Collapse>
           <Nav>
             <LinkContainer className="navigation" to="/leaderboards">
-              <NavItem>Boards</NavItem>
+              <NavItem className>Boards</NavItem>
             </LinkContainer>
             <LinkContainer className="navigation" to="/about">
               <NavItem>About</NavItem>

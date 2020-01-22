@@ -73,7 +73,7 @@ export default function Home(props) {
                     </LinkContainer>
                   </div>
                   <div class="col-md-12">
-                    <h4>Don't have an account? Click here to <a href="/signup">sign up.</a></h4>
+                    <h4>Don't have an account? Click here to <a href="/signup">sign up</a>.</h4>
                     <br/>
                   </div>
                 </div>

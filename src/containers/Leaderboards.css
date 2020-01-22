@@ -26,6 +26,7 @@
 .Leaderboards .leaderboards td, .leaderboards th {
   border: 1px solid #ddd;
   padding: 8px;
+  color: darkslategrey;
 }
 
 .Leaderboards .leaderboards tr:nth-child(even){background-color: #f2f2f2;}
@@ -40,4 +41,5 @@
   text-align: center;
   background-color:darkgray;
   font-weight: bold;
+  color: darkslategrey;
 }

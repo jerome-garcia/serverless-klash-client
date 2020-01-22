@@ -1,11 +1,19 @@
-.Home .lander h1 {
-    font-family: "Open Sans", sans-serif;
-    font-weight:bold;
-    font-size: 50px;
+.Home h1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: darkslategrey;
 }
+
+.Home h4 {
+    text-align: center;
+    font-size: small;
+    color: lightslategrey;
+}
+
 .Home p {
-    font-family: "Open Sans", sans-serif;
-    text-align: justify;
+    text-align: center;
+    color: slategrey;
 }
 
 .Home .img-fluid{
@@ -13,8 +21,3 @@
     height: auto;
 }
 
-.Home h4 {
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
-    font-size: small;
-}

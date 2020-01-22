@@ -12,4 +12,8 @@
         align-items: center;
         text-align:center;
     }
+
+    .RedirectLogin h3 {
+        color: slategrey;
+    }
 }

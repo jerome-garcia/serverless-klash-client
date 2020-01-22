@@ -35,7 +35,7 @@ export default function RedirectLogin(props) {
       <div className ="container">
         <div className="row">
           <div className="col">
-            <h3>Sorry, you must login to continue.</h3>
+            <h3>Sorry, you must login to continue</h3>
           </div>
           <br/>
           <div className="col">

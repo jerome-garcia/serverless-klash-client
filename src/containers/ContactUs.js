@@ -42,7 +42,7 @@ export default function Help(props) {
   }
 
   return (
-    <div className="Help">
+    <div className="ContactUs">
       <form onSubmit={handleSubmit}>
         <div className="container">
           <div className="row">

@@ -42,9 +42,6 @@ function App(props) {
     return (
       !isAuthenticating &&
       <div className="App container">
-        <MetaTags>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        </MetaTags>
         <Navbar fluid collapseOnSelect>
           <Navbar.Header>
           <Navbar.Brand>

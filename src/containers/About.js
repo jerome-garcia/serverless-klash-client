@@ -5,9 +5,6 @@ import MetaTags from 'react-meta-tags';
 export default function About() {
   return (
     <div className="About">
-        <MetaTags>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        </MetaTags>
         <div className="container">
             <div className="col-md-6">
               <h2>Meta - A sports matchmaking platform</h2>

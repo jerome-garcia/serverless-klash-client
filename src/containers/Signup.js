@@ -120,9 +120,6 @@ async function handleConfirmationSubmit(event) {
   function renderForm() {
     return (
       <div className="container">
-          <MetaTags>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-          </MetaTags>
           <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-md-6">

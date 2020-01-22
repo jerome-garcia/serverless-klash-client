@@ -23,7 +23,6 @@ export default function Home(props) {
     }
   }
 
-
   function renderLander() {
     return ( props.isAuthenticated ? ( 
             <div className="row">
@@ -87,9 +86,6 @@ export default function Home(props) {
   return (
     <div className="Home">
       <div className="container">
-        <MetaTags>
-         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        </MetaTags>
         {renderLander()}
       </div>
     </div>
